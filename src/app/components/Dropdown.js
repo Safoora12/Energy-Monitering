@@ -44,7 +44,7 @@ const Dropdown = ({ title,children, adjust }) => {
           </span>      
 =======
           {title}
-          </span><Image  src={imgSrc} className={imgClassName} alt="Profile Pic" width={40} height={40}   />
+          </span>
      
          
         
