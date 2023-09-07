@@ -39,8 +39,16 @@ const Dropdown = ({ title,children, adjust }) => {
         className={"px-2 py-1 rounded flex items-center"}
       >
         <span className="mr-1">
+<<<<<<< HEAD
           {title} 
           </span>      
+=======
+          {title}
+          </span><Image  src={imgSrc} className={imgClassName} alt="Profile Pic" width={40} height={40}   />
+     
+         
+        
+>>>>>>> 9014e6171f6eb3beb778dc716e83a6302c8cf5a2
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
