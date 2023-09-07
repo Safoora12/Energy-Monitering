@@ -39,10 +39,10 @@ const Dropdown = ({ title, imgSrc, imgClassName, children, adjust }) => {
         className={"px-2 py-1 rounded flex items-center"}
       >
         <span className="mr-1">
-          {title} 
+          {title}  <Image  src={imgSrc} className={imgClassName} alt="Profile Pic" width={40} height={40}   />
           </span>
      
-          <Image  src={imgSrc} className={imgClassName} alt="Profile Pic" width={40} height={40}   />
+         
         
         <svg
           xmlns="http://www.w3.org/2000/svg"
