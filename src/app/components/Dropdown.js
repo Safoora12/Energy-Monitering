@@ -1,5 +1,7 @@
 "use client";
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+
 // import Link from 'next/link';
 
 const Dropdown = ({ title, imgSrc, imgClassName, children, adjust }) => {
@@ -39,7 +41,9 @@ const Dropdown = ({ title, imgSrc, imgClassName, children, adjust }) => {
         <span className="mr-1">
           {title} 
           </span>
-          <img src={imgSrc} className={imgClassName} />
+     
+          <Image  src={imgSrc} className={imgClassName} alt="Profile Pic" width={40} height={40}   />
+        
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"

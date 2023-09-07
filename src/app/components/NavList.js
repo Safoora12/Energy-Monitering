@@ -6,6 +6,7 @@ import Dropdown from '../components/Dropdown';
 import { usePathname } from "next/navigation";
 import LogoutButton from './LogoutButton';
 
+
 function NavList() {
   const pathname = usePathname();
   const [user, setUser] = useState({});
@@ -48,7 +49,7 @@ function NavList() {
         </ul>
       </div>
       <div>
-           <Dropdown  imgSrc={user?.image} imgClassName="mt-2 w-10 h-10 rounded-full"  adjust={'ml-[-35px] w-[108px]'}>
+           <Dropdown  imgSrc={user?.image} imgClassName="mt-2 rounded-full mb-[-20px]"  adjust={'ml-[-35px] w-[108px]'}>
               <Link href="/profile"><li>View Profile</li></Link>
               <li><LogoutButton></LogoutButton></li>
             </Dropdown>
