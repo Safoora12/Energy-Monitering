@@ -48,7 +48,7 @@ function NavList() {
         </ul>
       </div>
       <div>
-           <Dropdown img = {<img src={user?.image} className="mt-2 w-10 h-10 rounded-full " />} adjust={'ml-[-35px] w-[108px]'}>
+           <Dropdown  imgSrc={user?.image} imgClassName="mt-2 w-10 h-10 rounded-full"  adjust={'ml-[-35px] w-[108px]'}>
               <Link href="/profile"><li>View Profile</li></Link>
               <li><LogoutButton></LogoutButton></li>
             </Dropdown>
