@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 // import Link from 'next/link';
 
-const Dropdown = ({ title,children, adjust }) => {
+const Dropdown2 = ({ title, imgSrc, imgClassName, children, adjust }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
@@ -38,9 +38,7 @@ const Dropdown = ({ title,children, adjust }) => {
         onClick={toggleDropdown}
         className={"px-2 py-1 rounded flex items-center"}
       >
-        <span className="mr-1">
-          {title} 
-          </span>      
+       <Image  src={imgSrc} className={imgClassName} width={40} height={40} />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -66,10 +64,10 @@ const Dropdown = ({ title,children, adjust }) => {
           ))}    
         </ul>
       )}
-      
+       
     </div>
     
   );
 };
 
-export default Dropdown;
+export default Dropdown2;

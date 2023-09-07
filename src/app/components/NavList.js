@@ -5,6 +5,7 @@ import axios from 'axios';
 import Dropdown from '../components/Dropdown';
 import { usePathname } from "next/navigation";
 import LogoutButton from './LogoutButton';
+import Dropdown2 from './Dropdown2';
 
 
 function NavList() {
@@ -49,10 +50,10 @@ function NavList() {
         </ul>
       </div>
       <div>
-           <Dropdown  imgSrc={user?.image} imgClassName="mt-2 rounded-full mb-[-20px]"  adjust={'ml-[-35px] w-[108px]'}>
+        <Dropdown2 imgSrc={user?.image} imgClassName="mt-2 rounded-full mb-[-20px]"  adjust={'ml-[-35px] w-[108px]'}>
               <Link href="/profile"><li>View Profile</li></Link>
               <li><LogoutButton></LogoutButton></li>
-            </Dropdown>
+            </Dropdown2>
       </div>
     </nav>
   )
