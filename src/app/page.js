@@ -10,6 +10,8 @@ import Realtime from './components/Realtime';
 import Radiuspie from './components/Radiuspie';
 import Donut from './components/Donut';
 
+
+
 function page() {
   return (
     <div className='p-2'>
