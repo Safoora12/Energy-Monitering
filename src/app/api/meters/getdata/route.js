@@ -11,9 +11,7 @@ export async function GET(NextRequest){
         const meter = await Meter.find({ Time : { $gt : "2023-08-23T23:44:49.661+05:00" , $lt: "2023-08-24T03:59:59.300+05:00"}});
         console.log("this is Meter api data");
         console.log(meter);
-        return NextResponse.json({
-         meter           
-        })
+        return NextResponse.json(meter)
     } catch (error) {
         console.log(error.message)
         console.log("########################this is error log of me################## ");
