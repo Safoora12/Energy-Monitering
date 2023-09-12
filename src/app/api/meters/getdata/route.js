@@ -12,9 +12,7 @@ export async function GET(NextRequest){
         console.log("this is Meter api data");
         console.log(meter);
         return NextResponse.json({
-          message: "Meter Listed",
-          meter: meter,
-          success: true          
+          meter: meter           
         })
     } catch (error) {
         console.log(error.message)
