@@ -12,7 +12,7 @@ export async function GET(NextRequest){
         console.log("this is Meter api data");
         console.log(meter);
         return NextResponse.json({
-          meter: meter           
+         meter           
         })
     } catch (error) {
         console.log(error.message)
