@@ -8,10 +8,10 @@ connect();
 export async function GET(NextRequest) {
   try {
     // Access the "GCL_new" collection directly
-    const collection = mongoose.connection.db.collection("Zephyr_new");
-
+    const collection = mongoose.connection.db.collection("Active_Tags");
+     console.log(collection);
     // Your query to fetch data from the collection 
-    const meter = await collection.find({Time: {$gt: "2023-07-21T19:29:51.447+05:00" , $lt: "2023-09-12T14:14:52.143+05:00" }}).toArray();
+    const meter = await collection.find().toArray();
 
     console.log("This is Meter API data");
     console.log(meter);
